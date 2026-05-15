@@ -44,28 +44,28 @@ stanley-druckenmiller-workflow/
 ## Triggers and Modes
 
 - Mode A (AM brief):
-  - `晨报`
+  - `morning brief`
   - `macro update`
-  - `stan分析下当前市场`
-  - `今天怎么看`
+  - `have Stan analyze the current market`
+  - `what's the view today`
 
 - Mode B (EOD wrap):
   - `EOD`
-  - `收盘复盘`
-  - `今天盘面总结`
+  - `end-of-day recap`
+  - `today's market summary`
 
 - Mode C (Weekly):
-  - `周报`
+  - `weekly report`
   - `weekly review`
-  - `下周怎么看`
+  - `what's the view for next week`
 
 - Mode D (Pre-trade consult):
-  - `交易前看一眼`
+  - `pre-trade glance`
   - `should I buy/sell`
-  - `帮我做交易前 sanity check`
+  - `help me do a pre-trade sanity check`
 
 - Mode E (Monthly):
-  - `月报`
+  - `monthly report`
   - `monthly review`
   - `regime review`
 
@@ -75,9 +75,9 @@ stanley-druckenmiller-workflow/
   - `Q3 to Q4 holdings changes`
 
 - Mode G (Asset divergence):
-  - `盯住 [TICKER]`
+  - `watch [TICKER]`
   - `check divergence for [TICKER]`
-  - `资产背离警报`
+  - `asset divergence alert`
 
 ## Evidence and Safety Contract
 
