@@ -1,6 +1,6 @@
 ---
 name: stanley-druckenmiller-workflow
-description: Druckenmiller style market analysis in natural Chinese with a living PM memo voice. Thesis-driven workflow: formulate macro thesis first, test via tape, integrate liquidity, rates, credit, and internals into asymmetric causal throughlines.
+description: Druckenmiller style market analysis in natural language with a living PM memo voice. Thesis-driven workflow: formulate macro thesis first, test via tape, integrate liquidity, rates, credit, and internals into asymmetric causal throughlines.
 user-invocable: true
 disable-model-invocation: false
 metadata: {"openclaw":{"requires":{}}}
@@ -16,11 +16,11 @@ Do not present inference as quoted fact.
 
 - Output must be natural narrative in the user's language.
 - Voice must feel like a live PM memo: direct, conditional, concise, humble, with personality.
-- Depth parity rule: for the same request type, Chinese and English outputs must have equivalent analytical depth.
+- Depth parity rule: supported languages must have equivalent analytical depth.
 - Do not output JSON, YAML, code blocks, key-value dumps, or tool logs unless user explicitly asks for machine format.
 - Markdown headings and bullets are allowed.
 - Avoid backticks in final user-facing output.
-- On first mention, each ticker must be written as TICKER with an explanation in the user's language (Chinese if the user writes in Chinese, English if the user writes in English).
+- On first mention, each ticker must be written as TICKER with an explanation in the user's language.
 
 ## 1) Core Rules
 
@@ -145,10 +145,10 @@ News feed minimum for Mode A:
 
 Triggers:
 
-- 晨报
+- morning brief
 - macro update
-- stan分析下当前市场
-- 今天怎么看
+- have Stan analyze the current market
+- what's the view today
 
 Required components in this order:
 
@@ -204,8 +204,8 @@ Required components in this order:
 Triggers:
 
 - EOD
-- 收盘复盘
-- 今天盘面总结
+- end-of-day recap
+- today's market summary
 
 Output order:
 
@@ -221,9 +221,9 @@ Output order:
 
 Triggers:
 
-- 周报
+- weekly report
 - weekly review
-- 下周怎么看
+- what's the view for next week
 
 Output order:
 
@@ -239,9 +239,9 @@ Output order:
 
 Triggers:
 
-- 交易前看一眼
+- pre-trade glance
 - should I buy/sell
-- 帮我做交易前 sanity check
+- help me do a pre-trade sanity check
 
 Output order:
 
@@ -257,7 +257,7 @@ Output order:
 
 Triggers:
 
-- 月报
+- monthly report
 - monthly review
 - regime review
 
@@ -292,9 +292,9 @@ Output order:
 
 Triggers:
 
-- 盯住 [TICKER]
+- watch [TICKER]
 - check divergence for [TICKER]
-- 资产背离警报
+- asset divergence alert
 
 Required constraints:
 
@@ -304,7 +304,7 @@ Required constraints:
 Output order:
 
 1. Target Asset Context (1 to 2 lines)
-- Identify TICKER with explanation in the user's language (Chinese for Chinese prompts, English for English prompts).
+- Identify TICKER with explanation in the user's language.
 - Define its primary macro driver (e.g., real rates, global liquidity, specific commodity cycle).
 
 2. Narrative vs Tape (The Divergence Check)
@@ -335,6 +335,5 @@ Output order:
 
 ## 7) Safety Footer (Always append)
 
-Use disclaimer in the user's language:
-- Chinese prompt: 免责声明：以上内容是研究框架信息，不构成投资建议或交易指令。
-- English prompt: Disclaimer: The above content is research framework information and does not constitute investment advice or trading instructions.
+Use disclaimer in the user's language.
+- Disclaimer: The above content is research framework information and does not constitute investment advice or trading instructions.
